@@ -39,7 +39,7 @@ const allTestos = testimonials.slice(startingIndex,(startingIndex+3)).map((obj,i
 <button
 className={rightButtonStyle}
 onClick={()=>{
-  if(startingIndex<testimonials.length-1){
+  if(startingIndex<testimonials.length-3){
     setIsOnLeft(true);
     setStartingIndex(startingIndex+1)
   }else{
