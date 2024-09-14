@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar} from '@fortawesome/free-solid-svg-icons';
+
 const TestamonialCard=(props)=>{
   const {testimonials} = props;
 
@@ -10,7 +13,7 @@ const TestamonialCard=(props)=>{
       </div>
       <div className="flex flex-col items-center text-stone-500 leading-relaxed">
       
-      <div className="text-amber-600"><i class="fa-regular fa-star mr-2"></i>{testimonials.rating}</div>
+      <div className="text-amber-600 flex items-center"><div className='mr-1'>{testimonials.rating}</div><FontAwesomeIcon icon={faStar} /></div>
       <div className="text-xl text-neutral-600">{testimonials.name}</div>
       <div>{testimonials.text}</div>
       
