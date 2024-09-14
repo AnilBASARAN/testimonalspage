@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import TestimonialCarousel from "./TestimonialCarousel";
 
-function App() {
+const App = () => {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="outerContainer flex justify-center">
+      
+      <div className="innerContainer w-full max-w-4xl flex flex-col items-center">
+
+        <div className="border-b-4 border-b-orange-200 text-3xl flex  justify-center  p-4 m-4">Al's favourite shop</div>       
+      
+      <TestimonialCarousel />
+       
+    </div>
+    
     </div>
   );
-}
+};
 
 export default App;
